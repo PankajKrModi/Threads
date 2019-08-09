@@ -54,7 +54,7 @@ public class Runner {
 		
 		for (int i = 0; i < 1000; i++) {
 			
-			acquireLock(lock1, lock2);//deadlock situation
+			acquireLock(lock2, lock1);//deadlock situation
 			
 			try {
 			Accounts.transfer(acc2, acc1, random.nextInt(100));
