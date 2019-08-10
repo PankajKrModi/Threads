@@ -47,8 +47,7 @@ class Consumer implements Runnable{
 				System.out.println("Value removed: "+val);
 				Thread.sleep(100);
 			} catch (InterruptedException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
+				Thread.currentThread().interrupt();
 			}
 		}
 	}
